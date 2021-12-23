@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연습예시</title>
+<script>
+
+	//문제1) 월급이 100원이다. 연봉은? (조건 : 세금 10% 제외)
+	var monthlyIncome = 100 * 12 * (1- (0.1));
+	document.write(monthlyIncome + "원<br>");
+	
+	//문제2) 시험점수를 30, 50, 4점 을 받았다. 평균은?
+	var score1 = 30;
+	var score2 = 50;
+	var score3 = 4;
+	
+	var avg = (score1 + score2 + score3) / 3;
+	
+	document.write(avg + "점<br>");
+			
+	//문제3) 가로가 3이고 세로가 6인 삼각형 넓이 출력
+	var width = 3;
+	var height = 6;
+	
+	var area = width * height / 2;
+	
+	document.write("넓이 : " + area + "<br>");
+	
+	//문제4) 100초를 1분 40초로 출력
+	var second = 100;
+	var minute = parseInt(second / 60);
+	var dividedSecond = second % 60;
+	
+	document.write(minute + "분 " + dividedSecond + "초<br>");
+	
+	//문제5) 800원에서 500원짜리 개수 , 100원짜리 개수 출력
+	//정답5) 500원(1개), 100원(3개) 
+	var haveMoney = 800;
+	var have500 = parseInt(haveMoney / 500);
+	var have100 = (haveMoney - (500 * have500)) / 100;
+	
+	document.write("500원(" + have500 +"개) " + "100원(" + have100 +"개)")
+</script>
+</head>
+<body>
+
+</body>
+</html>

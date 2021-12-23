@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연습예제</title>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+		$("#setPayMethod").click(function(){
+			var data = "";
+			if ($("input[name='payMethod']:checked").val() == "card"){
+				data += "카드 번호 : ";
+				data +=	"<input type='text' size='5'>&nbsp";
+				data +=	"<input type='text' size='5'>&nbsp";
+				data +=	"<input type='text' size='5'>&nbsp";
+				data +=	"<input type='text' size='5'>&nbsp";
+			}
+			else {
+				data += "핸드폰 번호 : ";
+				data +=	"<select>";
+				data += "<option value='010'>010</option>"
+				data += "<option value='016'>016</option>"
+				data += "<option value='017'>017</option>"
+				data += "<option value='018'>018</option>"
+				data += "</select> - <input type='text' size='5'> - <input type='text' size='5'>"
+			}
+			$("#target").html(data);
+		})
+	});
+		
+</script>
+</head>
+<body>
+
+	<!-- 
+	
+		1) 신용카드 선택시
+		
+			카드 번호 : [   ] [   ] [   ] [   ]        < 표시
+		
+		2) 핸드폰 번호 선택시
+		
+			핸드폰 번호 :  [010] - [   ] - [   ] 		< 표시 (010부분 : 셀렉트태그)
+		
+		3) 1~2번이 모두 반복적으로 가능하도록
+		
+		스크립트를 작성해보시오.
+	
+	 -->
+	
+	<p>
+		<input type="radio" name="payMethod" value="card" checked > 신용카드	
+		<input type="radio" name="payMethod" value="phone"> 휴대폰 결제
+		<input type="button" value="정답" id="setPayMethod">
+	</p>
+	<div>
+	<p id="target">
+	</p>
+	</div>
+
+</body>
+</html>

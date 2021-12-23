@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>배송지 정보</legend>
+			<p>배송방법 
+				<input type="radio" name="배송방법" value="일반" checked>일반택배&emsp;
+				<input type="radio" name="배송방법" value="편의점">편의점택배&emsp;
+				<input type="radio" name="배송방법" value="해외">해외배송
+			</p>
+			<p>배송지 선택
+				<input type="radio" name="배송지" value="기본" checked>기본배송지&emsp;
+				<input type="radio" name="배송지" value="새로입력">새로입력&emsp;
+				<input type="radio" name="배송지" value="최근배송지">최근배송지
+			</p>
+			<p>받으실 분 <input type="text" size="35"></p>
+			<p>휴대폰번호
+				<select name="phoneNumber">
+					<option value="010" selected>010</option>	
+					<option value="017">017</option>	
+					<option value="018">018</option>	
+				</select>
+				- <input type="text" size="10"> - <input type="text"size="10">
+			</p>
+			<p>유선전화(선택)
+				<select name="linePhone">
+					<option value="02" selected>02</option>	
+					<option value="061">061</option>	
+					<option value="031">031</option>	
+				</select>
+				- <input type="text" size="10"> - <input type="text" size="10">
+			</p>
+			<p>주소 
+				<input type="text" size="5"><a href="#">우편번호검색</a>
+			</p>
+			<p>지번 주소 : <input type="text" size="40"></p>
+			<p>도로명 주소 : <input type="text" size="40"></p>
+			<p>나머지 주소 : <input type="text" size="40"></p>
+			<p>배송 메시지
+				<input type="radio" name="message" value="1">예
+				<input type="radio" name="message" value="2" checked>아니오
+			</p>
+			<p><input type="text" placeholder="택배 기사님께 전달할 메시지를 남겨주세요." size="40"></p>
+		</fieldset>
+	</form>
+</body>
+</html>

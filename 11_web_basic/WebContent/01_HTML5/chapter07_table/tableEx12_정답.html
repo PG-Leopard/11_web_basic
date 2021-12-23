@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>2.배송지 정보</h1>
+	<table border="1">
+		<tr>
+			<td>배송방법</td>
+			<td>
+				<input type="radio" name="배송방법" value="0" checked>일반택배
+				<input type="radio" name="배송방법" value="1">편의점택배
+				<input type="radio" name="배송방법" value="2">해외배송
+			</td>
+		</tr>		
+		<tr>
+			<td>배송지 선택</td>
+			<td>
+				<input type="radio" name="배송지 선택" value="0" checked>기본배송지
+				<input type="radio" name="배송지 선택" value="1">새로입력
+				<input type="radio" name="배송지 선택" value="2">최근배송지
+			</td>
+		</tr>		
+		<tr>
+			<td>받으실 분</td>
+			<td><input type="text" size="34"></td>
+		</tr>		
+		<tr>
+			<td>휴대폰번호</td>
+			<td>
+				<select>
+					<option value="010" name="휴대폰번호">010</option>
+					<option value="017" name="휴대폰번호">017</option>
+					<option value="018" name="휴대폰번호">018</option>
+				</select> - 
+				<input type="text" size="7"> - <input type="text" size="7">
+				<p></p>
+			</td>
+		</tr>		
+		<tr>
+			<td>유선전화(선택)</td>
+			<td>
+				<select>
+					<option value="02" name="유선전화(선택)">02</option>
+					<option value="031" name="유선전화(선택)">031</option>
+					<option value="061" name="유선전화(선택)">061</option>
+				</select> - 
+				<input type="text" size="15"> - <input type="text" size="15">
+			</td>
+		</tr>		
+		<tr>
+			<td>주소</td>
+			<td>
+			<input type="text" size="15"><a href="#">우편번호검색</a>
+			<p>지번 주소 : <input type="text" size="15"></p>
+			<p>도로명 주소 : <input type="text" size="15"></p>
+			<p>나머지 주소 : <input type="text" size="15"></p>
+			</td>
+		</tr>		
+		<tr>
+			<td>배송 메시지</td>
+			<td><input type="text" placeholder="택배 기사님께 전달할 메시지"></td>
+		</tr>	
+		<tr>
+			<td>선물 포장</td>
+			<td><input type="radio" name="yesOrNo" value="1">예&emsp;
+			<input type="radio" name="yesOrNo" value="0" checked>아니오</td>
+		</tr>	
+	</table>
+</body>
+</html>

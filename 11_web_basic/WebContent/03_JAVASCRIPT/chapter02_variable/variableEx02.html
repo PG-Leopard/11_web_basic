@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데이터의 형변환(casting)</title>
+<script>
+
+	// 1) 정수 > 문자열
+	var nData = 1;
+	var parseNData = String(nData);					// 괄호 묶는 곳이 java와 반대이며 형변환 형태의 맨 앞 글자를 대문자로 사용
+	
+	console.log(nData , typeof nData);				// js는 , 사용 가능
+	console.log(parseNData, typeof parseNData);
+	console.log("");
+	
+	// 2) 문자열 > 정수
+	var strData1 = "100";
+	var parseStrData1 = Number(strData1);
+	
+	console.log(strData1 , typeof strData1);
+	console.log(parseStrData1 , typeof parseStrData1);
+	console.log("");
+	
+	// 3) 실수 > 문자열
+	var fData = 3.14;
+	var parseFData = String(fData);
+	console.log(fData , typeof fData);
+	console.log(parseFData , typeof parseFData);
+	console.log("");
+	
+	// 4) 문자열 > 실수
+	var strData2 = "7.77";	
+	var parsestrData2 = Number(strData2);
+
+	console.log(strData2 , typeof strData2);
+	console.log(parsestrData2 , typeof parsestrData2);
+	console.log("");
+	
+	// 5) 실수 > 정수
+	var nData2 = 3.14;
+	var parseNData2 = parseInt(nData2);				// 소수점 부분을 빼고, 정수 부분만 저장됨
+	
+	console.log(nData2 , typeof nData2);
+	console.log(parseNData2 , typeof parseNData2);
+	console.log("");
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

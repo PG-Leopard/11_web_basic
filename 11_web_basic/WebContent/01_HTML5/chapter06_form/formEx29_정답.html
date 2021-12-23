@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>결제정보</legend>
+				<p>
+					<input type="radio" name="결제방법" value="신용카드" checked>신용카드&emsp;
+					<input type="radio" name="결제방법" value="제휴 신용카드">제휴 신용카드&emsp;
+					<input type="radio" name="결제방법" value="실시간 계좌이체">실시간 계좌이체&emsp;
+					<input type="radio" name="결제방법" value="무통장입금">무통장입금
+				</p>
+				<p>
+					<input type="radio" name="결제방법" value="휴대폰 결제">휴대폰 결제&emsp;
+					<input type="radio" name="결제방법" value="카카오페이(간편결제)">카카오페이(간편결제)&emsp;
+					<input type="radio" name="결제방법" value="페이나우(간편결제)">페이나우(간편결제)&emsp;
+					<input type="radio" name="결제방법" value="페이코(간편결제)">페이코(간편결제)&emsp;
+					<input type="radio" name="결제방법" value="직접임금">직접임금&emsp;
+				</p>
+				<p>
+				카드 선택&ensp;
+				<select>
+					<option value="삼성" selected>삼성</option>
+					<option value="국민">국민</option>
+					<option value="농협">농협</option>
+				</select>
+				</p>
+				<p>
+				할부 기간&emsp;
+				<select>
+					<option value="일시불" selected>일시불</option>
+					<option value="3개월할부">3개월할부</option>
+					<option value="6개월할부">6개월할부</option>
+				</select>
+				</p>
+				<p>
+				휴대폰 번호 입력&emsp;
+				<input type="text" size="5" maxlength="3">- <input type="text" size="5" maxlength="4">- <input type="text" size="5" maxlength="4">
+				</p>
+		</fieldset>	
+	</form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연습예제</title>
+<script>
+	
+	var isDuple = false;	
+	
+	function checkPwdLength() {
+		if (document.getElementById("pwd").value.length < 8 && !isDuple) {
+			
+			var p = document.createElement("p");
+			var addText = document.createElement("input");
+			addText.type = "text";
+			addText.style = "color:red";
+			addText.size = "100";
+			addText.value = "비밀번호는 8자리 이상으로 작성하세요.";
+			
+			p.appendChild(addText);
+			document.getElementById("target").appendChild(p);
+			
+			isDuple = true;
+		}
+		else if (document.getElementById("pwd").value.length >= 8 && isDuple) {
+			var node = document.getElementById("target");
+			node.removeChild(node.lastChild);
+			isDuple = false;
+		}
+		
+	}
+	
+</script>
+</head>
+<body>
+	
+	<!-- 
+		
+		비밀번호가 8글자 미만일경우 "비밀번호는 8자리 이상으로 작성하세요."를 빨간색 글씨로
+		비밀번호 input태그 아래에 출력해 보시오.
+		
+		비밀번호가 8글자 이상으로 수정되었을때 "비밀번호는 8자리 이상으로 작성하세요." 텍스트를 삭제해 보시오.
+	
+	 -->
+
+	<fieldset>
+		<form>
+	   		<p>
+				<label>아이디 : <input type="text" name="id" name="name" ></label>
+			</p>
+	   		<p id="target">
+				<label>비밀번호 : <input type="password" id="pwd" name="pwd" onblur="checkPwdLength()"></label>
+			</p>
+	   		<p >
+				<label>이메일 : <input type="email" id="email" name="email" ></label>
+			</p>
+			<p>
+				<input type="submit" value="전송">
+			</p>
+		</form>
+	</fieldset>	
+	
+</body>
+</html>
