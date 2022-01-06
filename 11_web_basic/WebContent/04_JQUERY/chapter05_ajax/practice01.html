@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연습예시</title>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+		
+		$("#submitButton").click(function(){
+			
+			$.ajax({
+			    url   : 'practice01_pro.jsp', 
+			    type  : 'post', 
+			    data  : {id:$("#id").val()}
+			});
+			
+		});
+		
+	});	
+		
+</script>
+</head>
+<body>
+	아이디 : <input type="text" id="id"><button id="submitButton">중복확인</button>
+</body>
+</html>
